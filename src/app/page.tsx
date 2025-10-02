@@ -16,7 +16,7 @@ export default function Index() {
     <main>
       <section className="relative">
         <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
-          <div className="relative h-[70vh] min-h-[520px] flex items-center">
+          <div className="relative h-[100vh] min-h-[520px] flex items-center">
             <Image
               src={heroPost.coverImage}
               alt={`Imagen de portada para ${heroPost.title}`}

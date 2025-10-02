@@ -12,8 +12,8 @@ import Buttons from "./_components/buttons";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Renta de Jetski | Dia completo en Manzanillo ${CMS_NAME}`,
+  description: `Ubicados en Bahia de Santiago, renta Seadoo Wakepro 2017 el dia completo(11am-7pm) + actividades recreativas; snorkel, wakeboard, inflables, etc. ${CMS_NAME}.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
