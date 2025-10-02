@@ -6,6 +6,8 @@ import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
+import Header from "./_components/header";
+import Buttons from "./_components/buttons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,16 +62,8 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
-        <div className="bg-blue-600 text-white text-sm py-1 text-center sticky top-0 z-50">
-          Teléfono: <a href="tel:+523121898177" className="font-semibold underline-offset-2 underline"> MX +52 312 189 8177</a>
-          <a href="tel:+12488211414" className="font-semibold underline-offset-2 px-4 underline"> US +1 248 821 1414</a>
-        </div>
-        <div className=" text-white text-sm py-2 text-center">
-          <a href="#promocion" className="font-semibold underline-offset-2 px-2 underline"> Precios</a>
-          <a href="#acts" className="font-semibold underline-offset-2 px-2 underline" > Actividades</a>
-          <a href="#acts" className="font-semibold underline-offset-2 px-2 underline" > Reglas</a>
-          <a href="#acts" className="font-semibold underline-offset-2 px-2 underline" > Preguntas</a>
-        </div>
+        <Header />
+        <Buttons/>
         <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
         <Footer />
