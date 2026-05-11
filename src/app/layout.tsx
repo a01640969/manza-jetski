@@ -1,13 +1,9 @@
-import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
-import Header from "./_components/header";
-import Buttons from "./_components/buttons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,14 +55,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body
-        className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
-      >
-        <Header />
-        <Buttons/>
-        <ThemeSwitcher />
+      <body className={cn(inter.className)}>
         <div className="min-h-screen">{children}</div>
-        <Footer />
       </body>
     </html>
   );
